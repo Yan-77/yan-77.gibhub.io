@@ -1,0 +1,409 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Domine', serif;
+	color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+a {
+	text-decoration: none; 
+	color: #000000;
+}
+
+ul {
+	list-style: none;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+/*NAVEGADOR*/
+
+.navegador{
+	width: 100%;
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 20px 0;
+	padding-left: 42px;
+	padding-right: 100px;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	position: fixed;
+	box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.25);
+}
+
+hr {
+	position: fixed;
+}
+
+.logo-arbol {
+	width: 250px;
+}
+
+/*NAVEGADOR IZQUIERDO*/
+
+.navegador ul {
+	display: flex;
+}
+
+.navegador ul li {
+	padding: 10px;
+	font-weight: bold;
+}
+
+.navegador ul li a {
+	padding: 2px;
+}
+
+.navegador ul li a:hover {
+	border-bottom: 2px solid #000000;
+	color: rgb(88 15 113);
+}
+
+.navegador ul.navegador-menu {
+	flex: 1;
+	margin-left: 20px;
+}
+
+#menu {
+	margin-left: 20px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+	font-size: 20px;
+	display: none;
+}
+
+/*PORTADA*/
+hr {
+	margin: 5px 0;
+}
+
+.portada {
+	width: 100%;
+	height: 100vh;
+	background-image: url(imagen12.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.portada h2 {
+	font-size: 50px;
+}
+
+/*NOSOTROS*/
+
+.nosotros {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-image: url(fondo.jpg);
+	background-size: cover;
+	background-position: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.nosotros img {
+	width: 80%;
+	height: 100%;
+}
+
+.nosotros h3 {
+	font-size: 50px;
+	margin: 20px 0;
+	color: #fff;
+}
+
+.nosotros p {
+	font-size: 30px;
+	color: #fff;
+}
+
+/*NUESTROS VALORES*/
+
+.nuestros-valores {
+	width: 100%;
+	height: 100vh;
+	background-image: url(escritorio.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.nuestros-valores h2,
+.nuestros-valores p {
+	margin: 20px 0;
+	font-size: 50px;
+	color: #fff;
+}
+
+.nuestros-valores p {
+	font-size: 30px;
+}
+
+/*SERVICIOS*/
+
+.contenedor-servicios {
+	width: 100%;
+	height: 100vh;
+	background-image: url(biblioteca.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.contenedor-servicios h2{
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.contenedor-servicios li{
+	font-size: 30px;
+	color: #fff;
+	list-style: none;
+	margin: 5px 0;
+}
+
+/*CONTACTO*/
+
+.contenedor-contacto {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-image: url(contacto.jpg);
+	background-size: cover;
+	background-position: center;
+	align-content: center;
+	margin-bottom: 20px;
+}
+
+.texto-contacto {
+	color: #fff;
+	margin: 20px 0;
+	list-style: none;
+	text-align: center;
+}
+
+.texto-contacto h2 {
+	margin: 20px 0;
+	font-size: 50px;
+}
+
+.texto-contacto li {
+	margin: 10px 0;
+	font-size: 30px;
+}
+
+.campo {
+	width: 90%;
+	padding: 15px 10px;
+	font-size: 20px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+
+	min-height: 40px;
+	max-height: 50px;
+}
+
+textarea {
+	width: 90%;
+	padding: 15px 10px;
+	font-size: 20px;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+
+	
+	min-height: 140px;
+	max-height: 150px;
+}
+
+.boton-enviar {
+	padding: 15px;
+	font-size: 20px;
+	border:none;
+	outline: 0px;
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+.boton-enviar:hover {
+	background: rgb(88 15 113);
+	color: #fff;
+}
+
+/*REDES*/
+
+.contenedor-redes {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.contenedor-redes p {
+	margin: 5px 0;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+	margin: 0 10px;
+}
+
+.links a i {
+	font-size: 30px;
+}
+
+#whatsapp:hover {
+	color: green;
+}
+
+#facebook:hover {
+	color: blue;
+}
+
+#linkedin:hover {
+	color: lightblue;
+}
+
+/*DERECHOS DE AUTOR*/
+
+.copy {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+/*DISEÑO RESPONSABLE*/
+
+@media (max-width: 700px) {
+
+	#menu {
+		display: block;
+		transform: translateX(40px);
+		transform: translateY(-20px);
+	}
+
+	.navegador {
+		padding-left: 18px;
+		padding-right: 5px;
+		position: static;
+	}
+
+	.navegador ul.navegador-menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgb(119 55 135);
+		height:100%;
+		padding: 30px;
+		opacity: .9;
+		transform: translateX(-400px);
+		transition: transform .5s ease-in-out;
+	}
+
+	.navegador ul.navegador-menu.show {
+		transform: translateX(-20px);
+	}
+
+	.navegador ul.navegador-menu li {
+		padding: 20px;
+	}
+
+	.navegador-menu a {
+		color: #fff;
+	}
+
+	.navegador ul li a:hover {
+		border-bottom: 2px solid #000000;
+		color: rgb(45 171 165);
+	}
+
+	.navegador-menu-derecha {
+		margin-right: 40px;
+	}
+
+	.nosotros {
+		display: flex;
+		align-items: center;
+	}
+
+	.arbol {
+		display: none;
+	}
+
+	.texto-nosotros {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		padding: 0 30px;
+	}
+
+	.contenedor-contacto {
+		grid-template-columns:1fr;
+	}
+
+	form {
+		text-align: center;
+	}
+
+	.texto-contacto {
+		margin-bottom: 0;
+	}
+
+	textarea {
+		min-height: 120px;
+		max-height: 130px;
+	}
+}
+
+@media (max-width: 600px) {
+		.contenedor-contacto {
+		grid-template-columns:1fr;
+	}
+
+		form {
+		text-align: center;
+	}
+}

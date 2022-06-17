@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Morgian </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="icon" href="arbol morgian.png">
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css"href="estilo.css">
+
+		<!--NORMALIZE-->
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		
+		<!--FUENTE-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Domine&family=Oswald&display=swap" rel="stylesheet">
+
+		<!--iCONOS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+
+	<body>
+			
+		<!--NAVEGADOR-->
+			<nav class="navegador">
+				<a href="index.html">
+				<img src="Logo MORGIAN.png" alt="Morgian" title="Morgian" class="logo-arbol">
+				</a>
+				<ul class="navegador-menu show">
+					<li>
+						<a href= "#inicio">Inicio</a>
+					</li>
+					<li>
+						<a href= "#nosotros">Nosotros</a>
+					</li>
+					<li>
+						<a href= "#nuestrosvalores">Nuestros Valores</a>
+					</li>
+					<li>
+						<a href= "#servicios">Áreas de Práctica</a>
+					</li>
+					<li>
+						<a href= "#contacto">Contacto</a>
+					</li>
+				</ul>
+				<ul class="navegador-menu-derecha">
+					<li class="iconos-navegador">
+						<a href= "#">
+							<i class="fas fa-search"></i>
+						</a>
+						<i id="menu" class="fas fa-bars"></i>
+					</li>
+				</ul>
+			</nav>
+			<hr>
+
+		<div class="contenedor">
+
+			<!--PORTADA-->
+			<header id="inicio" class="portada">
+				<h2>Eficacia, responsabilidad y celeridad</h2>
+			</header>
+
+			<!--NOSOTROS-->
+			<div id="nosotros" class="nosotros">
+				<div class="arbol">
+					<img src="arbol morgian.png" alt="logo">
+				</div>
+				<div class="texto-nosotros">
+					<h3>MORGIAN</h3>
+					<p>Somos un estudio jurídico de pensamiento moderno, buscamos mejorar e ir más allá de toda expectativa siempre en miras a las necesidades de cada cliente. Cada integrante de nuestro equipo se encuentra muy pendientes de los cambios culturales y tecnológicos que haya para anticiparnos y lograr ser pioneros en diversos aspectos.</p>
+				</div>
+			</div>
+
+			<!--NUESTROS VALORES-->
+			<section id="nuestrosvalores" class="nuestros-valores">
+				<div class="contenido-valores">
+					<h2>Nuestros Valores</h2>
+					<p>Compromiso - Profesionalismo - Respeto - Confianza</p>
+				</div>
+			</section>
+
+			<!--SERVICIOS-->
+			<div id="servicios" class="contenedor-servicios">
+				<h2>Áreas de Práctica</h2>
+				<li>Derecho laboral</li>
+				<li>Derecho de familia</li>
+				<li>Derecho sucesorio</li>
+				<li>Derecho civil y comercial</li>
+				<li>Asesoramiento empresarial</li>
+				<li>Demandas, contestaciones e incidentes</li>
+				<li>Acuerdos judiciales y extrajudiciales</li>
+				<li>Constitución de sociedades comerciales</li>
+			</div>	
+
+			<!--CONTACTO-->
+			<div id="contacto" class="contenedor-contacto" >
+				<div class="texto-contacto">
+					<h2>Contacto</h2>
+						<li>MORGIAN</li>
+						<li> (011)3985-6848</li>
+						<li> abogados@morgian.com.ar</li>
+						<li> Moreno 957 - Piso 8 - Of.1 - CABA</li>
+				</div>
+				<form action="https://formspree.io/f/mdobjylj" method="POST" autocomplete="off">
+					<input type="text" name="Nombre" placeholder="Ingresa tu nombre" class="campo">
+					<input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+					<textarea name="message" placeholder="Ingresa tu mensaje"></textarea>
+					<input type="submit" name="enviar" value="Enviar" class="boton-enviar">
+				</form>
+			</div>
+
+			<!--REDES-->
+			<div class="contenedor-redes">
+				<p>Seguinos en nuestras redes:</p>
+				<div class="links">
+		   			<a href="https://wa.me/+5491153844738/"> 
+		   				<i id="whatsapp" class="fab fa-whatsapp"></i>
+		   			</a>
+		   			<a href="https://www.facebook.com/pages/category/Lawyer---Law-Firm/Morgian-780185482340825/">
+		   				<i id="facebook" class="fab fa-facebook-f"></i>
+		   			</a>
+		   			<a id="linkedin" href="https://ar.linkedin.com/company/morgian?trk=public_profile_topcard-current-company"> 
+		   				<i class="fab fa-linkedin"></i>
+		   			</a>
+	   			</div>
+			</div>
+
+			<!--DERECHOS DE AUTOR-->
+			<footer class="copy"> 
+				<p> © 2022 Todos los derechos reservados. Prohibida su reproducción total o parcial.</p>
+			</footer>
+
+			<!--SCROLL REVEAL-->
+			<script src="https://unpkg.com/scrollreveal"></script>
+
+			<!--JS-->
+			<script src="main.js"></script>
+
+		</div>
